@@ -10039,21 +10039,28 @@
 document.addEventListener('DOMContentLoaded', () => {
     const body = document.querySelector('body'),
         checkbox = document.querySelector('.checkbox1'),
+        checkbox2 = document.querySelector('.checkbox2'),
         nav = document.querySelector('.nav');
     
     checkbox.addEventListener('click', () => {
-        body.classList.toggle('active-body');
-        nav.classList.toggle('active');
-        document.querySelector('.header__item--main').classList.toggle('active');
+        checkbox.classList.add('active');
+        checkbox2.classList.add('active');
+        body.classList.add('active-body');
+        nav.classList.add('active');
     });
     
+    checkbox2.addEventListener('click', () => {
+        checkbox.classList.remove('active');
+        checkbox2.classList.remove('active');
+        body.classList.remove('active-body');
+        nav.classList.remove('active');
+    });
     const menuTrigger = document.querySelector('.nav__item--menu');
     
     menuTrigger.addEventListener('click', (e) => {
-        if (!e.target.classList.contains('nav-modal__link')) {
-            e.preventDefault();
-            document.querySelector('.nav__modal').classList.toggle('active');
-        }
+    	if (!e.target.classList.contains('nav-modal__link')) {
+    		document.querySelector('.nav__modal').classList.toggle('active');
+    	}
     });
 
     const swiper = new Swiper('.slider1', {

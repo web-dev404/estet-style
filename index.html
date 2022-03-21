@@ -24,6 +24,18 @@
     			d="M17.6748 1.9326L16.0955 0.329921C15.879 0.110001 15.6156 0 15.306 0C14.9962 0 14.7328 0.110001 14.5162 0.329921L6.89806 8.0724L3.48385 4.59591C3.26705 4.3759 3.00384 4.26603 2.69427 4.26603C2.38449 4.26603 2.12128 4.3759 1.90448 4.59591L0.325155 6.19862C0.108358 6.41858 0 6.68576 0 7.00008C0 7.31415 0.108358 7.58158 0.325155 7.8015L4.52895 12.0674L6.1084 13.67C6.32507 13.8901 6.58836 14 6.89806 14C7.20764 14 7.47093 13.8898 7.68772 13.67L9.26713 12.0674L17.6748 3.53539C17.8914 3.31539 18 3.04825 18 2.73393C18.0002 2.41978 17.8914 2.1526 17.6748 1.9326Z"
     			fill="#FAFAFA"></path>
     	</symbol>
+    
+    	<symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 20" id="burger">
+    		<path
+    			d="M0.333008 0.5H25.6663V3.66667H0.333008V0.5ZM6.66634 8.41667H25.6663V11.5833H6.66634V8.41667ZM14.583 16.3333H25.6663V19.5H14.583V16.3333Z"
+    			fill="white"></path>
+    	</symbol>
+    
+    	<symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 23" id="close">
+    		<path
+    			d="M20.7751 22.8457L11.5001 13.5561L2.22513 22.8457L0.154297 20.7749L9.44388 11.4999L0.154297 2.22489L2.22513 0.154053L11.5001 9.44364L20.7751 0.168636L22.8314 2.22489L13.5564 11.4999L22.8314 20.7749L20.7751 22.8457Z"
+    			fill="white"></path>
+    	</symbol>
     </svg>
     <header class="header d-f flex-direction-column" id="header">
     	<div class="header__item--menu header__item">
@@ -55,15 +67,13 @@
     					<button class="red-btn red-btn--sm">Оставить заявку</button>
     				</nav>
     
-    				<input type="checkbox" id="checkbox1" class="checkbox1 visuallyHidden">
-    				<label class="checkbox1-label" for="checkbox1">
-    					<div class="hamburger hamburger1">
-    						<span class="bar bar1"></span>
-    						<span class="bar bar2"></span>
-    						<span class="bar bar3"></span>
-    						<span class="bar bar4"></span>
-    					</div>
-    				</label>
+    				<svg class="checkbox1">
+    					<use xlink:href='#burger'></use>
+    				</svg>
+    
+    				<svg class="checkbox2">
+    					<use xlink:href='#close'></use>
+    				</svg>
     			</div>
     		</div>
     	</div>

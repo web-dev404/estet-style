@@ -1569,100 +1569,41 @@ button.swiper-pagination-bullet {
     overflow: hidden;
 }
 
-.visuallyHidden {
-    position: absolute;
-    overflow: hidden;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    width: 1px;
-    margin: -1px;
-    padding: 0;
-    border: 0;
-}
-
-.hamburger {
-    margin: 0 auto;
-    width: 30px;
-    height: 30px;
-    position: relative;
-    cursor: pointer;
-}
-
-.hamburger .bar {
-    padding: 0;
-    width: 30px;
-    height: 4px;
-    background-color: #fff;
-    display: block;
-    border-radius: 4px;
-    transition: all 0.4s ease-in-out;
-    position: absolute;
-}
-
-.bar1 {
-    top: 0;
-}
-
-.bar2,
-.bar3 {
-    top: 13.5px;
-}
-
-.bar3 {
-    right: 0;
-}
-
-.bar4 {
-    bottom: 0;
-}
-
 /* HAMBURGER 1 */
-.checkbox1-label {
+.checkbox1 {
     display: none;
     margin-left: 20px;
     position: relative;
     z-index: 101;
+    width: 35px;
+    height: 35px;
 }
 
 @media (max-width: 1100px) {
-    .checkbox1-label {
+    .checkbox1 {
         display: block;
     }
 }
 
-@media (max-width: 400px) {
-    .checkbox1-label {
-        margin-left: 15px;
-    }
+.checkbox1.active {
+    display: none;
 }
 
-.checkbox1-label.active {
+.checkbox2 {
+    display: none;
+    margin-left: 20px;
+    position: relative;
+    z-index: 101;
+    width: 35px;
+    height: 35px;
+}
+
+.checkbox2.active {
+    display: block;
     position: absolute;
     top: 15px;
     right: 15px;
     margin-left: 0;
-}
-
-.checkbox1:checked + label > .hamburger1 > .bar1 {
-    transform: rotate(45deg);
-    transform-origin: 5%;
-    width: 41px;
-}
-
-.checkbox1:checked + label > .hamburger1 > .bar2 {
-    transform: translateX(-40px);
-    display: none;
-}
-
-.checkbox1:checked + label > .hamburger1 > .bar3 {
-    transform: translateX(40px);
-    display: none;
-}
-
-.checkbox1:checked + label > .hamburger1 > .bar4 {
-    transform-origin: 5%;
-    transform: rotate(-45deg);
-    width: 41px;
 }
 
 .header__main {
