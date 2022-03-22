@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title>EstetStyle</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.min.css"></head>
+
+<body>
+    <svg style='display: none;'>
+    	<symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 11" id="arrow-down">
+    		<path
+    			d="M6.4522 10.0459C6.51336 10.1347 6.5952 10.2074 6.69066 10.2576C6.78613 10.3077 6.89236 10.3339 7.0002 10.3339C7.10805 10.3339 7.21428 10.3077 7.30974 10.2576C7.40521 10.2074 7.48704 10.1347 7.5482 10.0459L13.5482 1.37925C13.6177 1.27929 13.6584 1.16221 13.666 1.04072C13.6735 0.919239 13.6477 0.798001 13.5912 0.690181C13.5347 0.582362 13.4498 0.492084 13.3456 0.429157C13.2414 0.366231 13.1219 0.333061 13.0002 0.333253H1.0002C0.878764 0.333754 0.759761 0.367351 0.655989 0.430428C0.552217 0.493506 0.467604 0.583678 0.411248 0.691248C0.354892 0.798818 0.328925 0.919716 0.336141 1.04094C0.343357 1.16216 0.383483 1.27913 0.452202 1.37925L6.4522 10.0459Z"
+    			fill="#C70000"></path>
+    	</symbol>
+    	<symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 14" id="checked">
+    		<path
+    			d="M17.6748 1.9326L16.0955 0.329921C15.879 0.110001 15.6156 0 15.306 0C14.9962 0 14.7328 0.110001 14.5162 0.329921L6.89806 8.0724L3.48385 4.59591C3.26705 4.3759 3.00384 4.26603 2.69427 4.26603C2.38449 4.26603 2.12128 4.3759 1.90448 4.59591L0.325155 6.19862C0.108358 6.41858 0 6.68576 0 7.00008C0 7.31415 0.108358 7.58158 0.325155 7.8015L4.52895 12.0674L6.1084 13.67C6.32507 13.8901 6.58836 14 6.89806 14C7.20764 14 7.47093 13.8898 7.68772 13.67L9.26713 12.0674L17.6748 3.53539C17.8914 3.31539 18 3.04825 18 2.73393C18.0002 2.41978 17.8914 2.1526 17.6748 1.9326Z"
+    			fill="#FAFAFA"></path>
+    	</symbol>
+    
+    	<symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 20" id="burger">
+    		<path
+    			d="M0.333008 0.5H25.6663V3.66667H0.333008V0.5ZM6.66634 8.41667H25.6663V11.5833H6.66634V8.41667ZM14.583 16.3333H25.6663V19.5H14.583V16.3333Z"
+    			fill="white"></path>
+    	</symbol>
+    
+    	<symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" id="close">
+    		<circle cx="22" cy="22" r="21.5" fill="#C70000" stroke="white"></circle>
+    		<path
+    			d="M23.6491 22.0001L30.6579 14.9909C31.114 14.535 31.114 13.7979 30.6579 13.3419C30.202 12.886 29.4649 12.886 29.0089 13.3419L21.9999 20.3511L14.9911 13.3419C14.5349 12.886 13.798 12.886 13.3421 13.3419C12.886 13.7979 12.886 14.535 13.3421 14.9909L20.3509 22.0001L13.3421 29.0093C12.886 29.4652 12.886 30.2024 13.3421 30.6583C13.5693 30.8858 13.868 31 14.1666 31C14.4651 31 14.7636 30.8858 14.9911 30.6583L21.9999 23.6491L29.0089 30.6583C29.2364 30.8858 29.5349 31 29.8334 31C30.132 31 30.4305 30.8858 30.6579 30.6583C31.114 30.2024 31.114 29.4652 30.6579 29.0093L23.6491 22.0001Z"
+    			fill="white"></path>
+    	</symbol>
+    
+    	<symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" id="close2">
+    		<path
+    			d="M26.7751 28.8457L17.5001 19.5561L8.22513 28.8457L6.1543 26.7749L15.4439 17.4999L6.1543 8.22489L8.22513 6.15405L17.5001 15.4436L26.7751 6.16864L28.8314 8.22489L19.5564 17.4999L28.8314 26.7749L26.7751 28.8457Z"
+    			fill="white"></path>
+    	</symbol>
+    </svg>
+    
+    <header class="header d-f flex-direction-column" id="header">
+    	<div class="header__item--menu header__item">
+    		<div class="container">
+    			<div class="header-item__main d-f ai-cen jc-sp">
+    				<a href="index.html">
+    					<img class="logo" src="assets/img/logo.png" alt="logo">
+    				</a>
+    	
+    				<nav class="nav d-f ai-cen">
+    					<div class="nav__item nav__item--menu d-f ai-end">
+    						<span class="fw-600 mr-5">Регион:</span> Москва
+    						<svg class="nav__arrow">
+    							<use xlink:href="#arrow-down"></use>
+    						</svg>
+    	
+    						<div class="nav__modal">
+    							<a class="nav-modal__link" href="#">Москва 2</a>
+    							<a class="nav-modal__link" href="#">Москва 3</a>
+    						</div>
+    					</div>
+    					<a href="#about" class="header__link nav__item">О товаре</a>
+    					<a href="#services" class="header__link nav__item nav__item--last">Услуги</a>
+    					<div class="text-align-right nav-item__tel">
+    						<a href="tel:+79999099999" class="nav__item">+7 999 9099999</a>
+    						<p>200-200</p>
+    					</div>
+    					<a href="#form" class="header__link red-btn red-btn--sm">Оставить заявку</a>
+    				</nav>
+    	
+    				<svg class="checkbox1">
+    					<use xlink:href='#burger'></use>
+    				</svg>
+    	
+    				<svg class="checkbox2">
+    					<use xlink:href='#close2'></use>
+    				</svg>
+    			</div>
+    		</div>
+    	</div>
+    	<div class="header__main d-f jc-cen flex-direction-column">
+    		<div class="container">
+    			<img class="header__img" src="assets/img/header.jpg" alt="">
+    
+    			<div class="header__item">
+    				<h1 class="h1 fw-600 mb-40">Перетяжка мебели для бизнеса</h1>
+    				<h2 class="header__subtitle mb-30">В современном мире роль изменения внешнего вида рабочего места может
+    					сильно повлиять на восприятие
+    					бизнеса.
+    					Использование качественных материалов, выбор современного дизайна в совокупности с надежностью и
+    					долговечностью
+    					формируют репутацию компании.</h2>
+    				<a href="#services" class="header__link red-btn">Подробнее</a>
+    			</div>
+    		</div>
+    	</div>
+    </header>
+    <div id="about" class="advantages mb-200">
+    	<div class="container">
+    		<div class="advantages__main advantages__main--right d-f ai-end jc-sp">
+    			<div>
+    				<h2 class="advantages__title1 title title--sm fw-600">Почему стоит выбрать нас?</h2>
+    
+    				<div class="header-slider">
+    					<div class="swiper slider1">
+    						<div class="swiper-wrapper">
+    							<div class="swiper-slide slider__item">
+    								<img class="slider__img" src="assets/img/slider1.jpg" alt="1">
+    							</div>
+    
+    							<div class="swiper-slide slider__item">
+    								<img class="slider__img" src="assets/img/slider2.jpg" alt="1">
+    							</div>
+    
+    							<div class="swiper-slide slider__item">
+    								<img class="slider__img" src="assets/img/slider3.jpg" alt="1">
+    							</div>
+    
+    							<div class="swiper-slide slider__item">
+    								<img class="slider__img" src="assets/img/slider4.jpg" alt="1">
+    							</div>
+    						</div>
+    
+    						<div class="swiper-pagination swiper-pagination1"></div>
+    					</div>
+    				</div>
+    			</div>
+    
+    			<div class="block__info block__info--right">
+    				<h2 class="advantages__hidden-title title title--sm fw-600">Почему стоит выбрать нас?</h2>
+    
+    				<h3 class="advantages__subtitle mb-10 fw-500 fz-18">Качество</h3>
+    				<ul class="advantages__ul mb-30">
+    					<li>Использование высоко экологичных материалов</li>
+    					<li>Выполнение работ в специально оборудованном цеху</li>
+    				</ul>
+    
+    				<h3 class="advantages__subtitle mb-10 fw-500 fz-18">Сервис</h3>
+    				<ul class="advantages__ul mb-30">
+    					<li>Демонтаж</li>
+    					<li>Монтаж</li>
+    					<li>Логистика</li>
+    				</ul>
+    
+    				<h3 class="advantages__subtitle mb-10 fw-500 fz-18">Гарантия</h3>
+    				<ul class="advantages__ul">
+    					<li>12 месяцев на все выполненные работы</li>
+    					<li>Полная поддержка в течении гарантийного срока</li>
+    				</ul>
+    
+    				<div class="advantages__stats d-f jc-sp">
+    					<div class="advantages-stats__item">
+    						<p class="advantages-stats__numb">8</p>
+    						<p>Лет опыта</p>
+    					</div>
+    
+    					<div class="advantages-stats__item">
+    						<p class="advantages-stats__numb">1000+</p>
+    						<p>Выполненных заказов</p>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+    
+    <div id="services" class="advantages mb-100">
+    	<div class="container">
+    		<div class="advantages__main d-f ai-cen jc-sp">
+    			<div class="block__info">
+    				<h2 class="title fw-600">Медицинские центры</h2>
+    
+    				<p class="block__text mb-30">В перетяжке медицинского оборудования мы используем антиаллергенные
+    					сертифицированные материалы, такие
+    					как: кожа
+    					Schweitzer и Aurora, которые сочетают в себе высокую износостойкость, легкость в обслуживании,
+    					долговечность и
+    					приятные тактильные ощущения.</p>
+    				<button class="modal-trigger-btn red-btn red-btn--big">Заказать</button>
+    			</div>
+    
+    			<div>
+    				<div class="header-slider">
+    					<div class="swiper slider2">
+    						<div class="swiper-wrapper">
+    							<div class="swiper-slide slider__item">
+    								<img class="slider__img" src="assets/img/slider2.jpg" alt="1">
+    							</div>
+    
+    							<div class="swiper-slide slider__item">
+    								<img class="slider__img" src="assets/img/slider1.jpg" alt="1">
+    							</div>
+    
+    							<div class="swiper-slide slider__item">
+    								<img class="slider__img" src="assets/img/slider3.jpg" alt="1">
+    							</div>
+    
+    							<div class="swiper-slide slider__item">
+    								<img class="slider__img" src="assets/img/slider4.jpg" alt="1">
+    							</div>
+    						</div>
+    
+    						<div class="swiper-pagination swiper-pagination2 text-align-right"></div>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+    
+    <div class="advantages mb-100">
+    	<div class="container">
+    		<div class="advantages__main advantages__main--right d-f ai-cen jc-sp">
+    			<div class="header-slider">
+    				<div class="swiper slider3">
+    					<div class="swiper-wrapper">
+    						<div class="swiper-slide slider__item">
+    							<img class="slider__img" src="assets/img/slider3.jpg" alt="1">
+    						</div>
+    
+    						<div class="swiper-slide slider__item">
+    							<img class="slider__img" src="assets/img/slider1.jpg" alt="1">
+    						</div>
+    
+    						<div class="swiper-slide slider__item">
+    							<img class="slider__img" src="assets/img/slider2.jpg" alt="1">
+    						</div>
+    
+    						<div class="swiper-slide slider__item">
+    							<img class="slider__img" src="assets/img/slider4.jpg" alt="1">
+    						</div>
+    					</div>
+    
+    					<div class="swiper-pagination swiper-pagination3"></div>
+    				</div>
+    			</div>
+    
+    			<div class="block__info">
+    				<h2 class="title fw-600">Фитнес залы</h2>
+    
+    				<p class="block__text mb-30">В перетяжке тренажёрных элементов мы используем кожу на микрофибре, марок
+    					Dakota и
+    					Altona, которые сочетают в себе износостойкость, проникающему воздействию и устойчивость к посторонним
+    					запахам</p>
+    				<button class="modal-trigger-btn red-btn red-btn--big">Заказать</button>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+    
+    <div class="advantages mb-200">
+    	<div class="container">
+    		<div class="advantages__main d-f ai-cen jc-sp">
+    			<div class="block__info">
+    				<h2 class="title fw-600">Салоны красоты</h2>
+    
+    				<p class="block__text mb-30">В перетяжке мебели салонов красоты мы используем кожу Nappa и Horn, которые
+    					обеспечивают высокую устойчивость к воздействию посторонних химических веществ, обеспечивая долговечность
+    					и
+    					простоту в эксплуатации </p>
+    				<button class="modal-trigger-btn red-btn red-btn--big">Заказать</button>
+    			</div>
+    
+    			<div>
+    				<div class="header-slider">
+    					<div class="swiper slider4">
+    						<div class="swiper-wrapper">
+    							<div class="swiper-slide slider__item">
+    								<img class="slider__img" src="assets/img/slider4.jpg" alt="1">
+    							</div>
+    
+    							<div class="swiper-slide slider__item">
+    								<img class="slider__img" src="assets/img/slider2.jpg" alt="1">
+    							</div>
+    
+    							<div class="swiper-slide slider__item">
+    								<img class="slider__img" src="assets/img/slider1.jpg" alt="1">
+    							</div>
+    
+    							<div class="swiper-slide slider__item">
+    								<img class="slider__img" src="assets/img/slider3.jpg" alt="1">
+    							</div>
+    						</div>
+    
+    						<div class="swiper-pagination swiper-pagination4 text-align-right"></div>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+    
+    <div id="form" class="form-block mb-100">
+    	<div class="container">
+    		<div class="form__main d-f">
+    			<div class="form__images d-f flex-wrap jc-sp">
+    				<img class="form__img" src="assets/img/form1.jpg" alt="form__img">
+    				<img class="form__img" src="assets/img/form2.jpg" alt="form__img">
+    				<img class="form__img" src="assets/img/form3.jpg" alt="form__img">
+    				<img class="form__img" src="assets/img/form3.jpg" alt="form__img">
+    				<img class="form__img" src="assets/img/form5.jpg" alt="form__img">
+    				<img class="form__img" src="assets/img/form4.jpg" alt="form__img">
+    			</div>
+    
+    			<form action="#" class="form d-f flex-direction-column" id="form">
+    				<h2 class="title title--sm2 fw-600">Остались вопросы?</h2>
+    
+    				<input type="text" placeholder="Имя" class="form__input mb-10">
+    				<input type="text" placeholder="Номер телефона" class="form__input mb-10">
+    				<textarea placeholder="Сообщение" class="form__input form__textarea mb-20"></textarea>
+    
+    				<div class="d-f ai-cen">
+    					<input class="cursor-pointer" type="checkbox" id="form__checkbox">
+    					<label class="cursor-pointer" id="form__label" for="form__checkbox">Я согласен(-на) с <a
+    							href="policy.html">обработкой персональных данных</a></label>
+    				</div>
+    
+    				<button class="red-btn w-100 mt-20">Отправить запрос</button>
+    			</form>
+    		</div>
+    	</div>
+    </div>
+    
+    <div class="modal">
+        <div class="modal__main">
+            <button class="modal__close">
+                <svg class="modal__svg">
+                    <use xlink:href="#close"></use>
+                </svg>
+            </button>
+    
+            <div class="modal-form__main d-f">
+                <img src="assets/img/modal.jpg" alt="modal">
+    
+                <form action="#" class="modal__form d-f flex-direction-column">
+                    <h2 class="title title--sm2 fw-600">Оставить заявку</h2>
+                    <h3>Оставьте контактные данные и наш специалист перезвонит Вам в течении 5 минут</h3>
+    
+                    <input type="text" placeholder="Имя" class="form__input mb-10">
+                    <input type="text" placeholder="Номер телефона" class="form__input mb-10">
+                    <textarea placeholder="Сообщение" class="form__input form__textarea mb-20"></textarea>
+    
+                    <div class="d-f ai-cen">
+                        <input class="cursor-pointer" type="checkbox" id="form__checkbox2">
+                        <label class="cursor-pointer ml-10" for="form__checkbox2">Я согласен(-на) с <a
+                                href="policy.html">обработкой персональных данных</a></label>
+                    </div>
+    
+                    <button class="red-btn w-100 mt-20">Отправить запрос</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__main d-f ai-cen jc-sp">
+                <a class="mb-20" href="#">
+                    <img class="logo" src="assets/img/logo2.jpg" alt="logo">
+                </a>
+    
+                <div class="mb-20">
+                    <a href="#" class="nav__item">О товаре</a>
+                    <a href="#" class="nav__item">Услуги</a>
+                </div>
+    
+                <div class="mb-20">
+                    <a class="footer__social-link" href="#">
+                        <svg class="footer__svg" width="40" height="40" viewBox="0 0 40 40" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="20" cy="20" r="20" fill="#C70000" />
+                            <path
+                                d="M9.3507 20.3741L13.9488 22.0886L15.7413 27.8557C15.8192 28.2454 16.2868 28.3233 16.5985 28.0895L19.1703 25.9853C19.4041 25.7515 19.7938 25.7515 20.1055 25.9853L24.7036 29.3364C25.0154 29.5702 25.483 29.4144 25.5609 29.0247L28.99 12.6587C29.0679 12.269 28.6782 11.8793 28.2886 12.0352L9.3507 19.3609C8.8831 19.5168 8.8831 20.2182 9.3507 20.3741ZM15.5075 21.2313L24.5477 15.6981C24.7036 15.6201 24.8595 15.8539 24.7036 15.9319L17.2999 22.868C17.0661 23.1018 16.8323 23.4135 16.8323 23.8032L16.5985 25.6736C16.5985 25.9074 16.2089 25.9853 16.1309 25.6736L15.1957 22.2445C14.9619 21.8548 15.1178 21.3872 15.5075 21.2313Z"
+                                fill="white" />
+                        </svg>
+    
+                    </a>
+    
+                    <a class="footer__social-link" href="#">
+                        <svg class="footer__svg" width="40" height="40" viewBox="0 0 40 40" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="20" cy="20" r="20" fill="#C70000" />
+                            <path
+                                d="M26.5808 12H14.4192C13.0462 12 12 13.0462 12 14.4192V26.5808C12 27.9538 13.0462 29 14.4192 29H26.5808C27.9538 29 29 27.9538 29 26.5808V14.4192C29 13.0462 27.9538 12 26.5808 12ZM20.5 25.6C23.3115 25.6 25.6 23.3769 25.6 20.6962C25.6 20.2385 25.5346 19.7154 25.4038 19.3231H26.8423V26.2538C26.8423 26.5808 26.5808 26.9077 26.1885 26.9077H14.8115C14.4846 26.9077 14.1577 26.6462 14.1577 26.2538V19.2577H15.6615C15.5308 19.7154 15.4654 20.1731 15.4654 20.6308C15.4 23.3769 17.6885 25.6 20.5 25.6ZM20.5 23.6385C18.6692 23.6385 17.2308 22.2 17.2308 20.4346C17.2308 18.6692 18.6692 17.2308 20.5 17.2308C22.3308 17.2308 23.7692 18.6692 23.7692 20.4346C23.7692 22.2654 22.3308 23.6385 20.5 23.6385ZM26.7769 16.6423C26.7769 17.0346 26.45 17.3615 26.0577 17.3615H24.2269C23.8346 17.3615 23.5077 17.0346 23.5077 16.6423V14.8769C23.5077 14.4846 23.8346 14.1577 24.2269 14.1577H26.0577C26.45 14.1577 26.7769 14.4846 26.7769 14.8769V16.6423Z"
+                                fill="white" />
+                        </svg>
+    
+                    </a>
+    
+                    <a class="footer__social-link" href="#">
+                        <svg class="footer__svg" width="40" height="40" viewBox="0 0 40 40" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="20" cy="20" r="20" fill="#C70000" />
+                            <path
+                                d="M29.8065 25.1153C29.8065 25.0322 29.7235 25.0322 29.7235 24.9492C29.3914 24.285 28.6442 23.4548 27.6479 22.5416C27.1498 22.1264 26.9007 21.7943 26.7346 21.6283C26.4856 21.2962 26.4856 21.0471 26.5686 20.715C26.6516 20.466 26.9837 20.0509 27.5649 19.3036C27.897 18.8885 28.063 18.6395 28.3121 18.3904C29.5574 16.7299 30.1386 15.6506 29.9725 15.1525L29.8895 15.0695C29.8065 14.9865 29.7235 14.9034 29.5574 14.9034C29.3914 14.8204 29.1423 14.8204 28.8932 14.9034H25.7384C25.6554 14.9034 25.6553 14.9034 25.4893 14.9034C25.4063 14.9034 25.3233 14.9034 25.3233 14.9034H25.2402H25.1572L25.0742 14.9865C24.9912 15.0695 24.9912 15.0695 24.9912 15.1525C24.6591 16.0658 24.244 16.813 23.8288 17.6432C23.5798 18.0583 23.3307 18.4734 23.0816 18.8055C22.8326 19.1376 22.6665 19.3867 22.5005 19.5527C22.3344 19.7188 22.1684 19.8018 22.0854 19.9678C22.0023 20.0509 21.8363 20.1339 21.8363 20.0509C21.7533 20.0509 21.6702 20.0509 21.6702 19.9678C21.5872 19.8848 21.5042 19.8018 21.4212 19.7188C21.3382 19.6357 21.3382 19.4697 21.2551 19.3036C21.2551 19.1376 21.2551 18.9716 21.2551 18.8885C21.2551 18.8055 21.2551 18.5564 21.2551 18.3904C21.2551 18.1413 21.2551 17.9753 21.2551 17.8923C21.2551 17.6432 21.2551 17.3111 21.2551 16.979C21.2551 16.6469 21.2551 16.3978 21.2551 16.2318C21.2551 16.0658 21.2551 15.8167 21.2551 15.6506C21.2551 15.4016 21.2551 15.2355 21.2551 15.1525C21.2551 15.0695 21.1721 14.9034 21.1721 14.8204C21.0891 14.7374 21.0061 14.6544 20.923 14.5713C20.84 14.4883 20.674 14.4883 20.591 14.4053C20.1758 14.3223 19.6777 14.2393 19.0966 14.2393C17.7682 14.2393 16.8549 14.3223 16.5228 14.4883C16.3568 14.5714 16.1907 14.6544 16.1077 14.8204C15.9417 14.9865 15.9417 15.0695 16.0247 15.0695C16.4398 15.1525 16.7719 15.3185 16.938 15.5676L17.021 15.7337C17.104 15.8167 17.104 15.9827 17.187 16.2318C17.27 16.4809 17.27 16.7299 17.27 17.062C17.27 17.5602 17.27 18.0583 17.27 18.3904C17.27 18.8055 17.187 19.0546 17.187 19.3036C17.187 19.5527 17.104 19.7188 17.021 19.8018C16.938 19.9678 16.9379 20.0509 16.8549 20.0509C16.8549 20.0509 16.8549 20.1339 16.7719 20.1339C16.6889 20.1339 16.6059 20.2169 16.4398 20.2169C16.3568 20.2169 16.1907 20.1339 16.1077 20.0509C15.9417 19.9678 15.7756 19.8018 15.6926 19.6357C15.5266 19.4697 15.3605 19.2206 15.1945 18.8885C15.0284 18.5564 14.7793 18.2244 14.6133 17.7262L14.4473 17.3941C14.3642 17.2281 14.1982 16.896 14.0321 16.4809C13.8661 16.0658 13.7001 15.7337 13.534 15.3186C13.451 15.1525 13.368 15.0695 13.2849 14.9865H13.2019C13.2019 14.9865 13.1189 14.9034 13.0359 14.9034C12.9528 14.9034 12.8698 14.8204 12.7868 14.8204H9.79798C9.46588 14.8204 9.29984 14.9034 9.21682 14.9865L9.13379 15.0695C9.13379 15.0695 9.13379 15.1525 9.13379 15.2355C9.13379 15.3186 9.13379 15.4016 9.21682 15.5676C9.63193 16.5639 10.1301 17.5602 10.6282 18.5564C11.1263 19.4697 11.6245 20.2999 11.9566 20.8811C12.3717 21.4623 12.7038 22.0434 13.1189 22.5416C13.534 23.0397 13.7831 23.3718 13.8661 23.5378C14.0321 23.7039 14.1152 23.7869 14.1982 23.8699L14.4473 24.119C14.6133 24.285 14.8624 24.5341 15.1945 24.7832C15.5266 25.0322 15.9417 25.2813 16.3568 25.5304C16.7719 25.7794 17.27 25.9455 17.7682 26.1115C18.3493 26.2776 18.8475 26.3606 19.3456 26.2776H20.591C20.84 26.2776 21.0061 26.1946 21.1721 26.0285L21.2551 25.9455C21.2551 25.8625 21.3382 25.8625 21.3382 25.7794C21.3382 25.6964 21.3382 25.6134 21.3382 25.4474C21.3382 25.1153 21.3382 24.8662 21.4212 24.6171C21.5042 24.3681 21.5042 24.202 21.5872 24.036C21.6703 23.8699 21.7533 23.7869 21.8363 23.7039C21.9193 23.6208 22.0024 23.5378 22.0024 23.5378H22.0854C22.2514 23.4548 22.5005 23.5378 22.6665 23.7039C22.9156 23.8699 23.1647 24.119 23.3307 24.3681C23.4967 24.6171 23.7458 24.8662 24.0779 25.1983C24.41 25.5304 24.6591 25.7794 24.8251 25.8625L25.0742 26.0285C25.2402 26.1115 25.4063 26.1946 25.6554 26.2776C25.9044 26.3606 26.0705 26.3606 26.2365 26.3606L29.0593 26.2776C29.3084 26.2776 29.5574 26.1946 29.7235 26.1115C29.8895 26.0285 29.9725 25.9455 29.9725 25.7794C29.9725 25.6964 29.9725 25.5304 29.9725 25.4474C29.8065 25.2813 29.8065 25.1983 29.8065 25.1153Z"
+                                fill="white" />
+                        </svg>
+    
+                    </a>
+                </div>
+            </div>
+            <p class="fz-12 fw-500" style="margin-left: 12px;">© 2022 Estet Style</p>
+        </div>
+    </footer>
+    <script src="assets/js/app.min.js"></script>
+</body>
+
+</html>
